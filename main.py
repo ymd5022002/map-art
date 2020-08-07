@@ -417,8 +417,6 @@ for i in range(number_film_thickness):
         Y[i] = Y[i] + light_source[j] * r[i * number_wavelength + j] * y_eq[j] / sum_y_eq           # Y(d) = (1/k)∫S(λ)R(λ,d)y(λ) dλ
         Z[i] = Z[i] + light_source[j] * r[i * number_wavelength + j] * z_eq[j] / sum_y_eq           # Z(d) = (1/k)∫S(λ)R(λ,d)z(λ) dλ
         #print(film_thickness , wavelength , r[i * number_wavelength + j], X[i] , Y[i] , Z[i])
-        j+=1
-    i+=1
 
 #カラーコードへの変換
 #print("film_thickness" ,"R" , "G" , "B", "color_code","X","Y","Z" )
@@ -470,7 +468,6 @@ for i in range(number_film_thickness):
     color_code += '{0:02x}{1:02x}{2:02x}'.format(sR[i], sG[i], sB[i])
     color_code  = color_code.replace('0x', '')
     #print(film_thickness ,sR[i] , sG[i] , sB[i], color_code[i] , X[i] , Y[i], Z[i])
-    i+=1
 
 #URL生成
 height = 0
@@ -500,7 +497,6 @@ for i in range (0 , number_cycle ):
         URL = URL + height_code + 'G' + color_code[number_film_thickness*6:(number_film_thickness+1)*6]
     elif i == number_cycle-1  :
         URL = URL + "GG" + color_code[number_film_thickness*6:(number_film_thickness+1)*6]
-    i+=1
 
 #地理院地図をブラウザで開く
 webbrowser.open(URL)
