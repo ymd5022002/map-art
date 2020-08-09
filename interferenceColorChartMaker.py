@@ -371,8 +371,8 @@ z_eq =[
 #yの等色関数y_eqの合計(k:sum_y_eq)を求める
 sum_y_eq =0.0
 for i in range(number_wavelength):
-    sum_y_eq = sum_y_eq + y_eq[i]           # k = ∫y(λ) dλ
-
+    sum_y_eq = sum_y_eq + ( y_eq[i] * light_source[i] ) / 100         # k = （1/100）∫S(λ)y(λ) dλ
+    
 def drawing(img, gap):
     """
     描画（ファイルに書く画像データを編集する）
