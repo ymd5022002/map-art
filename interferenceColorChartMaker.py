@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2020/8/7 
-# 作成　みんなの地図アート研究所　やまだこーじ
+# 作成　地図アート研究所　やまだこーじ
 # https://ymd5022002.github.io/map-art-jp/
 
 
