@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+ xmlns:gx="http://www.google.com/kml/ext/2.2"
+ xmlns:kml="http://www.opengis.net/kml/2.2"
+ xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<name>柿4</name>
+<GroundOverlay>
+<name>柿4.png</name>
+<drawOrder>50</drawOrder>
+<Icon>
+<href>柿4.png</href>
+</Icon>
+<LatLonBox>
+<north>90</north>
+<south>-90</south>
+<east>180</east>
+<west>-180</west>
+</LatLonBox>
+</GroundOverlay>
+</Document>
+</kml>
+
+
+
