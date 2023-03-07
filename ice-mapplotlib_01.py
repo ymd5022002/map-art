@@ -4,6 +4,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
 
 data = np.loadtxt('http://arukazan.jp/test/250cm33ave.asc', skiprows=6)
 
