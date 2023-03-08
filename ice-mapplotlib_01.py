@@ -329,6 +329,7 @@ fig, ax = plt.subplots(figsize=(14, 10), dpi=144)
 cont = ax.contour(xx, yy, z, levels=np.arange(0, 140, 5), colors='black')
 pcol = ax.pcolor(xx, yy, z, cmap=cmap, shading='auto')
 fig.colorbar(pcol, ax=ax)
+ax.set_aspect('equal')
 
 # 等高線図の色を変更する
 for c in cont.collections:
